@@ -15,7 +15,6 @@ export default function Videos() {
 
   return (
     <>
-      <div>Videos {keyword ? `${keyword}` : "핫트렌트"}</div>
       {isLoading && <p>로딩중...</p>}
       {error && <p>에러 발생!</p>}
       {videos && (
