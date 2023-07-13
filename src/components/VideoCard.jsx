@@ -9,7 +9,7 @@ export default function VideoCard({ video, type }) {
 
   return (
     <li
-      className={isList ? "flex gap-1 m-2" : ""}
+      className={isList ? "flex gap-1 m-2 cursor-pointer" : "cursor-pointer"}
       onClick={() =>
         navigate(`/videos/watch/${video.id}`, { state: { video } })
       }
